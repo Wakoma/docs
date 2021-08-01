@@ -63,17 +63,7 @@ Rufus is the software we'll use to create Bootable Media (the USB stick with Ubu
 **Note:** F2 > Boot-Order (UEFI) > Advanced > Boot-Configuration > OS=Linux and Boot Device=USB and Secure Boot should be enabled.
 
 **To enter boot menu:**
-Manufacturer Name	Booting keys
-ASUS	F8 or Esc
-Compaq	F9 or Esc
-eMachines	F12
-HP	F9 or Esc
-Samsung	F2, F12 or Esc
-Acer	F12, F9 or Esc
-Dell	F12
-Fujitsu	F12
-Lenovo	F8, F10 or F12
-Toshiba	F12
+![](https://i.imgur.com/FgdVCKs.png)
 
 
 * Press F10 to enter into the boot menu
