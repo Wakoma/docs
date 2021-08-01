@@ -63,6 +63,7 @@ Rufus is the software we'll use to create Bootable Media (the USB stick with Ubu
 **Note:** F2 > Boot-Order (UEFI) > Advanced > Boot-Configuration > OS=Linux and Boot Device=USB and Secure Boot should be enabled.
 
 **To enter boot menu:**
+
 ![](https://i.imgur.com/FgdVCKs.png)
 
 
