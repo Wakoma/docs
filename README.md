@@ -34,7 +34,7 @@ Rufus is the software we'll use to create Bootable Media (the USB stick with Ubu
 
 
 
-### 2. Download Rufus
+### 2. Create Bootable USB Drive
 
 
 * Download Rufus to create a bootable USB drive. Click [here](http://rufus.ie/en/), then download the exe file:
@@ -52,6 +52,10 @@ Rufus is the software we'll use to create Bootable Media (the USB stick with Ubu
 * If you get stuck, you can follow [these](https://ubuntu.com/tutorials/create-a-usb-stick-on-windows#1-overview) instructions.
 * Note: There are other options/ways as well to create a bootable USB drive
 
+### 2.5 (Alternative for Mac)
+
+* Install https://www.balena.io/etcher/
+* Tips: https://www.youtube.com/watch?v=f78AwZk3IXs
 
 ### 3. Install Ubuntu Server on the NUC
 
