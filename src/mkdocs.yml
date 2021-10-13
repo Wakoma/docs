@@ -1,4 +1,4 @@
-site_name: Lokal Documentation
+site_name: Lokal Docs
 site_url: https://docs.lokal.network/
 theme:
   name: 'material'
