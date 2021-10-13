@@ -5,8 +5,6 @@ theme:
   logo: assets/wakomalogo.png
   favicon: assets/wakomalogo.png
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.instant
     - navigation.sections
 nav:
