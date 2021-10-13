@@ -1,0 +1,4 @@
+body > header > nav.md-header__inner.md-grid > a > img {
+    height: 5rem;
+    width: 5rem;
+}

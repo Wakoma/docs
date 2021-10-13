@@ -2,8 +2,8 @@ site_name: Lokal Documentation
 site_url: https://docs.lokal.network/
 theme:
   name: 'material'
-  logo: wakomalogo.png
-  favicon: wakomalogo.png
+  logo: assets/wakomalogo.png
+  favicon: assets/wakomalogo.png
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -14,3 +14,6 @@ nav:
   - About: about.md
   - Services: services.md
   - Installation : installation.md
+extra_css:
+  - css/extra.css
+  
