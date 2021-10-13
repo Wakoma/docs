@@ -2,7 +2,7 @@ site_name: Lokal Documentation
 site_url: https://docs.lokal.network/
 theme:
   name: 'material'
-  logo: assets/wakomalogo.png
+  logo: wakomalogo.png
   features:
     - navigation.tabs
     - navigation.tabs.sticky
