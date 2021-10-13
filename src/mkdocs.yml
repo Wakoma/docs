@@ -2,7 +2,7 @@ site_name: Lokal Documentation
 site_url: https://docs.lokal.network/
 theme:
   name: 'material'
-  logo: assets/wakomalogo.png
+  logo: assets/wakomalogo2.png
   favicon: assets/wakomalogo.png
   features:
     - navigation.instant
