@@ -3,6 +3,7 @@ site_url: https://docs.lokal.network/
 theme:
   name: 'material'
   logo: wakomalogo.png
+  favicon: wakomalogo.png
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -13,4 +14,3 @@ nav:
   - About: about.md
   - Services: services.md
   - Installation : installation.md
-
