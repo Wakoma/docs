@@ -1,0 +1,1 @@
+* [Collabora Office](https://www.collaboraoffice.com/) - Powerful on-premise office suites that enable you to access documents, author new content and work collaboratively.
