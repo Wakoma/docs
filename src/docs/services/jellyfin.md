@@ -1,0 +1,1 @@
+* [Jellyfin](https://jellyfin.org/) - Jellyfin is the volunteer-built media solution that puts you in control of your media. Stream media to any device.

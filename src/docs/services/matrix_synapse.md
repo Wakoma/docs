@@ -1,0 +1,1 @@
+* [Matrix Synapse](https://matrix.org/) - An open network for secure, decentralized communication.

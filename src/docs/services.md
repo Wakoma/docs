@@ -6,7 +6,7 @@
 
 * [Nextcloud](https://nextcloud.com/) - The self-hosted productivity platform that keeps you in control.
 
-* [Jitsi](https://jitsi.org) - More secure, more flexible, and completely free video conferencing
+* [Jitsi](https://jitsi.org) - More secure, more flexible, and completely free video conferencing.
 
 * [Element](https://element.io/) - All-in-one secure chat app for teams, friends and organisations.
 

@@ -10,7 +10,28 @@ theme:
 nav:
   - Home: index.md
   - About: about.md
-  - Services: services.md
+  - Services:
+      - kiwix.md
+      - nextcloud.md
+      - jitsi.md
+      - element.md
+      - wordpress.md
+      - jellyfin.md
+      - unifi_controller.md
+      - transmission.md
+      - calibre_web.md
+      - matomo.md
+      - collabora.md
+      - grafana.md
+      - matrix.md
+      - prometheus.md
+      - resourcespace.md
+      - openvpn.md
+      - wireguard.md
+      - azuracast.md
+      - moodle.md
+      - kolibri.md
+  - Services (old): services.md
   - Installation : installation.md
 extra_css:
   - css/extra.css

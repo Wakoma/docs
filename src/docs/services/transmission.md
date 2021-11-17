@@ -1,0 +1,1 @@
+* [Transmission](https://transmissionbt.com/) - Fast, easy, and free BitTorrent Client (for downloading Kiwix ZIM files and other open licensed content).
