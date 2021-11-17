@@ -2,7 +2,7 @@ site_name: Lokal Docs
 site_url: https://docs.lokal.network/
 theme:
   name: 'material'
-  logo: assets/wakomalogo2.png
+  logo: assets/wakomalogo.png
   favicon: assets/wakomalogo.png
   features:
     - navigation.instant
@@ -11,26 +11,30 @@ nav:
   - Home: index.md
   - About: about.md
   - Services:
-      - kiwix.md
-      - nextcloud.md
-      - jitsi.md
-      - element.md
-      - wordpress.md
-      - jellyfin.md
-      - unifi_controller.md
-      - transmission.md
-      - calibre_web.md
-      - matomo.md
-      - collabora.md
-      - grafana.md
-      - matrix.md
-      - prometheus.md
-      - resourcespace.md
-      - openvpn.md
-      - wireguard.md
-      - azuracast.md
-      - moodle.md
-      - kolibri.md
+      - services/services.md
+      - Current Services:
+          - services/current/kiwix.md
+          - services/current/nextcloud.md
+          - services/current/jitsi.md
+          - services/current/element.md
+          - services/current/wordpress.md
+          - services/current/jellyfin.md
+          - services/current/unifi_controller.md
+          - services/current/transmission.md
+          - services/current/calibre_web.md
+          - services/current/matomo.md
+          - services/current/collabora.md
+          - services/current/grafana.md
+          - services/current/matrix.md
+          - services/current/prometheus.md
+          - services/current/resourcespace.md
+          - services/current/openvpn.md
+          - services/current/wireguard.md
+          - services/current/azuracast.md
+          - services/current/moodle.md
+          - services/current/kolibri.md
+      - Upcoming Services:
+          - services/upcoming/bigbluebutton.md
   - Services (old): services.md
   - Installation : installation.md
 extra_css:
