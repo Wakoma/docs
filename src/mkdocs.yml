@@ -11,31 +11,47 @@ nav:
   - Home: index.md
   - About: about.md
   - Services:
-      - services/services.md
       - Current Services:
-          - services/current/kiwix.md
-          - services/current/nextcloud.md
-          - services/current/jitsi.md
-          - services/current/element.md
-          - services/current/wordpress.md
-          - services/current/jellyfin.md
-          - services/current/unifi_controller.md
-          - services/current/transmission.md
-          - services/current/calibre_web.md
-          - services/current/matomo.md
-          - services/current/collabora.md
-          - services/current/grafana.md
-          - services/current/matrix.md
-          - services/current/prometheus.md
-          - services/current/resourcespace.md
-          - services/current/openvpn.md
-          - services/current/wireguard.md
           - services/current/azuracast.md
-          - services/current/moodle.md
+          - services/current/calibre_web.md
+          - services/current/collabora.md
+          - services/current/element.md
+          - services/current/grafana.md
+          - services/current/jellyfin.md
+          - services/current/jitsi.md
+          - services/current/kiwix.md
           - services/current/kolibri.md
+          - services/current/matomo.md
+          - services/current/matrix_synapse.me
+          - services/current/moodle.md
+          - services/current/nextcloud.md
+          - services/current/openvpn.md
+          - services/current/prometheus.md
+          - services/current/resourcesoace.md
+          - services/current/transmission.md
+          - services/current/uisp.md
+          - services/current/unifi_controller.md
+          - services/current/unpoller.md
+          - services/current/wireguard.md
+          - services/current/wordpress.md
       - Upcoming Services:
           - services/upcoming/bigbluebutton.md
-  - Services (old): services.md
+          - services/upcoming/diagrams_net.md
+          - services/upcoming/discourse.md
+          - services/upcoming/dokuwiki.md
+          - services/upcoming/etherpad.md
+          - services/upcoming/fdroid.md
+          - services/upcoming/hedgedoc.md
+          - services/upcoming/homeassistant.md
+          - services/upcoming/limesurvey.md
+          - services/upcoming/lychee.md
+          - services/upcoming/mediawiki.md
+          - services/upcoming/minecraft.md
+          - services/upcoming/osticket.md
+          - services/upcoming/piwigo.md
+          - services/upcoming/roundcube.md
+          - services/upcoming/syncthing.md
+          - services/upcoming/tinytinyrss.md
   - Installation : installation.md
 extra_css:
   - css/extra.css
