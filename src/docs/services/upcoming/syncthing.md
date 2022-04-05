@@ -1,0 +1,1 @@
+* [Syncthing](https://syncthing.net/) - A free, open-source peer-to-peer file synchronization application

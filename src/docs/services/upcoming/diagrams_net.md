@@ -1,0 +1,1 @@
+* [Diagrams.net](https://www.diagrams.net/) - A configurable diagramming/whiteboarding visualization application

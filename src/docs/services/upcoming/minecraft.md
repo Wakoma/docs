@@ -1,0 +1,1 @@
+* [Minecraft](https://www.minecraft.net/) - Server for multiplayer Minecraft.

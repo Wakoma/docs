@@ -1,0 +1,1 @@
+* [osTicket](https://osticket.com/) - osTicket is a widely used and trusted open source support ticketing system.
