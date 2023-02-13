@@ -18,6 +18,7 @@ nav:
           - services/current/collabora.md
           - services/current/element.md
           - services/current/grafana.md
+          - services/current/ipfs.md
           - services/current/jellyfin.md
           - services/current/jitsi.md
           - services/current/kiwix.md
@@ -28,7 +29,7 @@ nav:
           - services/current/nextcloud.md
           - services/current/openvpn.md
           - services/current/prometheus.md
-          - services/current/resourcesoace.md
+          - services/current/resourcespace.md
           - services/current/transmission.md
           - services/current/uisp.md
           - services/current/unifi_controller.md
