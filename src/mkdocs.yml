@@ -10,6 +10,7 @@ theme:
 nav:
   - Home: index.md
   - About: about.md
+  - Getting Started: gettingstarted.md
   - Services:
       - Current Services:
           - services/current/azuracast.md
@@ -52,7 +53,7 @@ nav:
           - services/upcoming/roundcube.md
           - services/upcoming/syncthing.md
           - services/upcoming/tinytinyrss.md
-  - Installation : installation.md
+  # - Installation : installation.md
 extra_css:
   - css/extra.css
   
