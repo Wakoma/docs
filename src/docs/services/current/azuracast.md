@@ -1,6 +1,7 @@
 # AzuraCast
 
 ![Service Logo](assets\services\azuracast\azuracast.jpg)
+![Alt text](../../assets/services/azuracast/azuracast.jpg)
 
 https://www.azuracast.com/
 
