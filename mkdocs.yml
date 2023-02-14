@@ -1,0 +1,67 @@
+site_name: Lokal Docs
+site_url: https://docs.lokal.network/
+theme:
+  name: 'material'
+  logo: assets/wakomalogowhite.png
+  favicon: assets/wakomalogo.png
+  features:
+    - navigation.instant
+    - navigation.sections
+nav:
+  - Home: index.md
+  - About: about.md
+  - Getting Started: gettingstarted.md
+  - Services:
+    - In Progress:
+      - services/current/archivebox.md
+      - services/current/fdroid.md
+      - services/current/librenms.md
+      - services/current/mumble.md
+      - services/current/netbox.md
+      - services/current/opewisp.md
+      - services/current/snipe-it.md
+      - services/current/zabbix.md
+      - services/current/zeek.md
+  - Current Services:
+      - services/current/azuracast.md
+      - services/current/calibre_web.md
+      - services/current/collabora.md
+      - services/current/element.md
+      - services/current/grafana.md
+      - services/current/ipfs.md
+      - services/current/jellyfin.md
+      - services/current/jitsi.md
+      - services/current/kiwix.md
+      - services/current/kolibri.md
+      - services/current/matomo.md
+      - services/current/matrix_synapse.md
+      - services/current/moodle.md
+      - services/current/nextcloud.md
+      - services/current/openvpn.md
+      - services/current/prometheus.md
+      - services/current/resourcespace.md
+      - services/current/transmission.md
+      - services/current/uisp.md
+      - services/current/unifi_controller.md
+      - services/current/unpoller.md
+      - services/current/wireguard.md
+      - services/current/wordpress.md
+  - Upcoming Services:
+      - services/upcoming/bigbluebutton.md
+      - services/upcoming/diagrams_net.md
+      - services/upcoming/discourse.md
+      - services/upcoming/dokuwiki.md
+      - services/upcoming/etherpad.md
+      - services/upcoming/hedgedoc.md
+      - services/upcoming/homeassistant.md
+      - services/upcoming/limesurvey.md
+      - services/upcoming/lychee.md
+      - services/upcoming/mediawiki.md
+      - services/upcoming/minecraft.md
+      - services/upcoming/osticket.md
+      - services/upcoming/piwigo.md
+      - services/upcoming/roundcube.md
+      - services/upcoming/syncthing.md
+      - services/upcoming/tinytinyrss.md
+extra_css:
+  - css/extra.css
