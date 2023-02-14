@@ -22,7 +22,7 @@ nav:
       - services/in_progress/snipe-it.md
       - services/in_progress/zabbix.md
       - services/in_progress/zeek.md
-  - Current Services:
+    - Current Services:
       - services/current/azuracast.md
       - services/current/calibre_web.md
       - services/current/collabora.md
@@ -46,7 +46,7 @@ nav:
       - services/current/unpoller.md
       - services/current/wireguard.md
       - services/current/wordpress.md
-  - Upcoming Services:
+    - Upcoming Services:
       - services/upcoming/bigbluebutton.md
       - services/upcoming/diagrams_net.md
       - services/upcoming/discourse.md
