@@ -12,6 +12,16 @@ nav:
   - About: about.md
   - Getting Started: gettingstarted.md
   - Services:
+        - In Progress:
+          - services/current/archivebox.md
+          - services/current/fdroid.md
+          - services/current/librenms.md
+          - services/current/mumble.md
+          - services/current/netbox.md
+          - services/current/opewisp.md
+          - services/current/snipe-it.md
+          - services/current/zabbix.md
+          - services/current/zeek.md
       - Current Services:
           - services/current/azuracast.md
           - services/current/calibre_web.md
@@ -42,7 +52,6 @@ nav:
           - services/upcoming/discourse.md
           - services/upcoming/dokuwiki.md
           - services/upcoming/etherpad.md
-          - services/upcoming/fdroid.md
           - services/upcoming/hedgedoc.md
           - services/upcoming/homeassistant.md
           - services/upcoming/limesurvey.md
