@@ -13,15 +13,15 @@ nav:
   - Getting Started: gettingstarted.md
   - Services:
     - In Progress:
-      - services/current/archivebox.md
-      - services/current/fdroid.md
-      - services/current/librenms.md
-      - services/current/mumble.md
-      - services/current/netbox.md
-      - services/current/opewisp.md
-      - services/current/snipe-it.md
-      - services/current/zabbix.md
-      - services/current/zeek.md
+      - services/in_progress/archivebox.md
+      - services/in_progress/fdroid.md
+      - services/in_progress/librenms.md
+      - services/in_progress/mumble.md
+      - services/in_progress/netbox.md
+      - services/in_progress/opewisp.md
+      - services/in_progress/snipe-it.md
+      - services/in_progress/zabbix.md
+      - services/in_progress/zeek.md
   - Current Services:
       - services/current/azuracast.md
       - services/current/calibre_web.md
