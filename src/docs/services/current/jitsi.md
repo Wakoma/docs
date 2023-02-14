@@ -2,7 +2,7 @@
 
 Insert Image here.
 
-https://jitsi.org)
+https://jitsi.org
 
 ## Basic Info
 
