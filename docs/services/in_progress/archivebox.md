@@ -1,6 +1,6 @@
 # ArchiveBox
 
-![Service Logo](assets\services\archivebox\archivebox.png)
+![Alt text](../../assets/services/archivebox/archivebox.png)
 
 https://archivebox.io/
 
