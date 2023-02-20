@@ -10,6 +10,7 @@ theme:
 nav:
   - Home: index.md
   - Getting Started: gettingstarted.md
+  - Resources: resources.md
   - Services:
     - Current Services:
       - services/current/azuracast.md
