@@ -1,4 +1,4 @@
 # Lokal Docs
 
-[![Lokal Documentation](https://docs.lokal.network/)
+[Lokal Documentation](https://docs.lokal.network/)
 
