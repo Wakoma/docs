@@ -9,7 +9,6 @@ theme:
     - navigation.sections
 nav:
   - Home: index.md
-  - About: about.md
   - Getting Started: gettingstarted.md
   - Services:
     - Current Services:
@@ -17,7 +16,7 @@ nav:
       - services/current/calibre_web.md
       - services/current/collabora.md
       - services/current/element.md
-      - services/upcoming/fdroid.md
+      - services/current/fdroid.md
       - services/current/grafana.md
       - services/current/ipfs.md
       - services/current/jellyfin.md
