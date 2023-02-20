@@ -12,21 +12,12 @@ nav:
   - About: about.md
   - Getting Started: gettingstarted.md
   - Services:
-    - In Progress:
-      - services/in_progress/archivebox.md
-      - services/in_progress/fdroid.md
-      - services/in_progress/librenms.md
-      - services/in_progress/mumble.md
-      - services/in_progress/netbox.md
-      - services/in_progress/opewisp.md
-      - services/in_progress/snipe-it.md
-      - services/in_progress/zabbix.md
-      - services/in_progress/zeek.md
     - Current Services:
       - services/current/azuracast.md
       - services/current/calibre_web.md
       - services/current/collabora.md
       - services/current/element.md
+      - services/upcoming/fdroid.md
       - services/current/grafana.md
       - services/current/ipfs.md
       - services/current/jellyfin.md
@@ -47,6 +38,14 @@ nav:
       - services/current/wireguard.md
       - services/current/wordpress.md
     - Upcoming Services:
+      - services/upcoming/archivebox.md
+      - services/upcoming/librenms.md
+      - services/upcoming/mumble.md
+      - services/upcoming/netbox.md
+      - services/upcoming/opewisp.md
+      - services/upcoming/snipe-it.md
+      - services/upcoming/zabbix.md
+      - services/upcoming/zeek.md
       - services/upcoming/bigbluebutton.md
       - services/upcoming/diagrams_net.md
       - services/upcoming/discourse.md
