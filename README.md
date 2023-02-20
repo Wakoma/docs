@@ -1,2 +1,4 @@
 # Lokal Docs
-Documentation for Lokal, nimble and services.
+
+[![Lokal Documentation](https://docs.lokal.network/)
+
