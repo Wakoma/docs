@@ -53,7 +53,7 @@ Now we need to change the hosts file to suit your needs. Let's go through the op
 
 - `hosts`: Specify the IP address of your target machine here.
 - `domain`: The domain that you will use, such as `lokal.network`. All services will be provisioned on a subdomain of the specified domain. Eg: `calibre.lokal.network`
-- `ssl_use_acme`: Set this value to `true` if you want to request SSL certificates from an ACME service like [Let's Encrypt](https://letsencrypt.org/). Make sure that your server is connected to the internet and has the appropriate DNS records on your domain. If set to false; you can manually add your certificate and key files in the `/opt/lokal/base/traefik/certs/` directory.
+- `ssl_use_acme`: Set this value to `true` if you want to request SSL certificates from an ACME service like [Let's Encrypt](https://letsencrypt.org/). Make sure that your server is connected to the internet and has the appropriate DNS records on your domain. If set to false, Lokal will create self-signed certificates or use your key and certificate specified by `ssl_key` and `ssl_cert` - those variables should contain path to your key/cert relative to the CWD when running the playbook.
 - `email_admin`: Specify the email of the administrator here
 - `password_admin`: Specify the administrator password here (no special characters)
 - `lokal_secret`: Specify a random alphanumeric string here Eg: `nui3fhAoiSDUndakd12`
@@ -78,7 +78,7 @@ all:
 Now we need to change the hosts file to suit your needs. Let's go through the options:
 
 - `hosts`: Specify the IP address of your target machine here.
-- `ssh_key`: Specify your SSH public key here.
+- `ssh_key`: Specify your SSH public key here (content, not path).
 - Ensure that the `ansible_user` from Step 2 is the same as `app_user` here.
 
 ### 4. Run the playbooks
