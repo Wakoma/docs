@@ -15,7 +15,7 @@ Rufus is the software we'll use to create Bootable Media (the USB stick with Ubu
 ## Install Ubuntu Server on NUC
 
 ### 1. Download Ubuntu Server
-* Download the latest Ubuntu Server 20.04 LTS .iso image using the Ubuntu-Server [link](https://ubuntu.com/download/server). 
+* Download the latest ISO image Ubuntu LTS Server from [official ubuntu site](https://ubuntu.com/download/server).
 * Click Option 2 - Manual server installation.
 ![](https://i.imgur.com/KVn3rV1.png)
 
@@ -123,6 +123,101 @@ https://www.itsupportwale.com/blog/install-ubuntu-20-04-lts-server/
 
 
 
-### 4. Install Lokal platform on the NUC
+## Install Lokal platform on the NUC
 
-Coming soon.
+Lokal is installed using `ansible` that allows you to manage your (ubuntu) server remotely. Firstly, you
+need to install ansible and clone the Lokal repo on your client (can be your server - you'll perform
+local installation in this case).
+
+```bash
+git checkout https://github.com/Wakoma/Lokal.git Lokal
+cd Lokal
+```
+
+We require ansible version `>=2.11`. Ansible is a python package so alternatively, you can use `pip` to
+install it.
+
+```bash
+pip install ansible  # or apt install ansible
+ansible-galaxy install -r requirements.yml
+```
+
+In case your client is Windows or just don't want to install ansible and python on your computer,
+feel free to use our docker container, that contains all necessary software for the client.
+```bash
+docker build -t lokal:latest .
+docker run --rm -itv ${PWD}:/lokal lokal:latest
+```
+This will give you a bash terminal where you can access lokal files and run all commands described below.
+
+_This is just a "client" that you use to actually install Lokal on your server. It is not Lokal installation._
+
+### Prepare your server (optional)
+
+This is an optional step that helps you prepare a fresh machine with only root user on it.
+The play `prepare.yml` creates an application user and adds your SSH key in `authorized_keys`
+if you define `setup_ssh:true` in your hosts vars. It also installs latest docker and other
+necessary software. You need to create a separate inventory file because this play connects
+as `root`. The content of the file is following
+```YAML
+all:
+  hosts: "1.2.3.4"
+  vars:
+    app_user: ubuntu # the application user under which lokal will run
+    ansible_user: root # mandatory to connect as root user
+    setup_ssh: true # set to true only if app_user does not have SSH setup yet (and fill `ssh_key`)
+    ssh_key: <content of your .ssh/id_rsa.pub or wherever you have your public key>
+```
+
+Now you are ready to run `ansible-playbook -i hosts/<your-inventory-file> prepare.yml`
+
+### Install Lokal
+
+First, create a new inventory file in `hosts/`. You can copy/modify the example `hosts/remote` file.
+I use server's nickname or domain for the filename.  This file will contain the IP, domain and other
+details about your server so Lokal can be setup  correctly. It needs to be in YAML format so you can
+specify services in this nice way. 
+The minimal example is bellow. For complete setup see [configuration section](configuration.md)
+
+```YAML
+all:
+  hosts: "1.2.3.4" # your server's IP (can be a hostname too)
+  vars:
+    ssl_use_acme: true # or false if it is just testing machine not visible from the internet
+    domain: server.example.com # domain visible from the outside internet (used only when ssl_use_acme=true)
+    ansible_user: ubuntu # the application user under which Lokal will run
+    services: # define wanted services - list of available services is in roles/ folder
+    - wordpress
+```
+
+Other options, that can be overriden can be found in `roles/<service>/defaults/main.yml`.
+The most important variables are described in [configuration section](configuration.md)
+and can be found in `roles/common/defaults/main.yml`
+
+## Services
+
+The services are hidden in `roles` folder (ansible required naming). You can find there the `base`
+service and `common` service used only as a source of configuration and optional services in other folders.
+You define which services to install in your `hosts/` file (per-server). Add/remove any desired services
+in `vars:services` list. No need to specify either base or common. They are both installed automatically.
+
+### Installation
+
+Once you have ansible setup on your local machine and remote server ready (preferably using `prepare.yml`)
+then you can start using the main `playbook.yml` that by default installs all services defined in
+`hosts` file in `services` variable.
+```bash
+ansible-playbook -i hosts/<your-host-file> playbook.yml # remote installation
+ansible-playbook --ask-become-pass -i hosts/local playbook.yml # local installation
+```
+or you can specify explicitly services that you want to install/update
+```bash
+ansible-playbook -i hosts/<your-host-file> -e install=wordpress playbook.yml
+```
+
+You can run installation multiple times. It should only check that everything is
+setup correctly. If you'd increase version in software in your hosts file or we
+would increase the version in the underlying roles than running the installation
+again would update the application.
+
+

@@ -32,7 +32,6 @@ all:
     lokal_secret: nui3fhAoiSDUndakd12
     ansible_user: lokal
     services:
-        - base
         - azuracast
         - calibre
         - docs
@@ -53,12 +52,15 @@ Now we need to change the hosts file to suit your needs. Let's go through the op
 
 - `hosts`: Specify the IP address of your target machine here.
 - `domain`: The domain that you will use, such as `lokal.network`. All services will be provisioned on a subdomain of the specified domain. Eg: `calibre.lokal.network`
-- `ssl_use_acme`: Set this value to `true` if you want to request SSL certificates from an ACME service like [Let's Encrypt](https://letsencrypt.org/). Make sure that your server is connected to the internet and has the appropriate DNS records on your domain. If set to false, Lokal will create self-signed certificates or use your key and certificate specified by `ssl_key` and `ssl_cert` - those variables should contain path to your key/cert relative to the CWD when running the playbook.
+- `ssl_use_acme`: Set this value to `true` if you want to request SSL certificates from an ACME service like [Let's Encrypt](https://letsencrypt.org/). Make sure that your server is connected to the internet and your DNS A record points to it. If set to `false`, Lokal will create self-signed certificates or use your key and certificate specified by `ssl_key` and `ssl_cert` - those variables should contain path to your key/cert relative to the CWD when running the playbook.
 - `email_admin`: Specify the email of the administrator here
-- `password_admin`: Specify the administrator password here (no special characters)
+- `password_admin`: Specify the administrator password here (no special characters, no spaces, at least 12 characters)
 - `lokal_secret`: Specify a random alphanumeric string here Eg: `nui3fhAoiSDUndakd12`
 - `ansible_user`: The username of a non-root user account with sudo privileges that ansible will use to connect and deploy services to your machine.
-- `services`: Modify this section by removing any services that you do not want/need. Please note that the `base`, `auth`, and `common` services are necessary and __must__ be installed; as they provide dependencies for other services.
+- `services`: Modify this section by removing any services that you do not want/need. Please do not add `base` and `common` because they have specific role.
+
+(optional settings)
+- `project_root`: Absolute path (optionally using envvars such as `$HOME`) to where Lokal will be installed (default: /opt/lokal/).
 
 When you're all done and ready, please save the file with a name of your choice in the hosts folder. In this guide, we will assume the name of this file to be `machine`
 
