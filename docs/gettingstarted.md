@@ -57,7 +57,7 @@ Now we need to change the hosts file to suit your needs. Let's go through the op
 - `password_admin`: Specify the administrator password here (no special characters, no spaces, at least 12 characters)
 - `lokal_secret`: Specify a random alphanumeric string here Eg: `nui3fhAoiSDUndakd12`
 - `ansible_user`: The username of a non-root user account with sudo privileges that ansible will use to connect and deploy services to your machine.
-- `services`: Modify this section by removing any services that you do not want/need. Please do not add `base` and `common` because they have specific role.
+- `services`: Modify this section by removing any services that you do not want/need. Please do not add `base` and `lokal` because they have specific role.
 
 (optional settings)
 - `project_root`: Absolute path (optionally using envvars such as `$HOME`) to where Lokal will be installed (default: /opt/lokal/).

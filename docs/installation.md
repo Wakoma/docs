@@ -192,14 +192,14 @@ all:
 
 Other options, that can be overriden can be found in `roles/<service>/defaults/main.yml`.
 The most important variables are described in [configuration section](configuration.md)
-and can be found in `roles/common/defaults/main.yml`
+and can be found in `roles/lokal/defaults/main.yml`
 
 ## Services
 
 The services are hidden in `roles` folder (ansible required naming). You can find there the `base`
-service and `common` service used only as a source of configuration and optional services in other folders.
+service and `lokal` service used only as a source of configuration and optional services in other folders.
 You define which services to install in your `hosts/` file (per-server). Add/remove any desired services
-in `vars:services` list. No need to specify either base or common. They are both installed automatically.
+in `vars:services` list. No need to specify either base or lokal. They are both installed automatically.
 
 ### Installation
 
