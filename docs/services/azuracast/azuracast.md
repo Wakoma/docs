@@ -4,8 +4,14 @@
 
 https://www.azuracast.com/
 
+
+## Summary
+
 Azuracast is a free and open-source self hosted web radio management suite.
 
+## Why is this useful for offline or underserved communities?
+
+Users are able to do live radio broadcasting through their nimble network even when there is no access to the wider internet. 
 
 ## Basic Info
 
@@ -41,3 +47,6 @@ For Server Administrators
 
 https://docs.azuracast.com/en/home
 
+https://www.youtube.com/watch?v=XfiFiOi46mk
+
+https://youtu.be/lEElFHUdFd4
