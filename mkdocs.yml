@@ -1,12 +1,20 @@
 site_name: Lokal Docs
 site_url: https://docs.lokal.network/
+repo_name: Wakoma/docs
+repo_url: https://github.com/Wakoma/docs
 theme:
+  icon:
+    repo: fontawesome/brands/github
   name: 'material'
   logo: assets/wakomalogowhite.png
   favicon: assets/wakomalogo.png
   features:
     - navigation.instant
     - navigation.sections
+extra_css:
+  - css/extra.css
+extra:
+  homepage: https://wakoma.co/lokal/
 nav:
   - Home: index.md
   - Getting Started: gettingstarted.md
@@ -62,5 +70,3 @@ nav:
       - services/roundcube/roundcube.md
       - services/syncthing/syncthing.md
       - services/tinytinyrss/tinytinyrss.md
-extra_css:
-  - css/extra.css
