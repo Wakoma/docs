@@ -10,7 +10,7 @@ Included services (save one or two) are open source and primarily focused on ena
 
 You can find the full list of current and upcoming services below.
 
-Questions/comments/collaboration? Feel free to join our [Discussion forums](https://forums.wakoma.co/), [Matrix Space](https://matrix.to/#/!JWutrWVlqsuiauWbPf:wakoma.net?via=wakoma.net), or email us at: info @ wakoma.co
+Questions/comments/collaboration? Feel free to join our [Discussion forums](https://forums.wakoma.co/), [Matrix Space](https://matrix.to/#/!JWutrWVlqsuiauWbPf:wakoma.net?via=wakoma.net), or email us at: info @ wakoma.co.
 
 
 
