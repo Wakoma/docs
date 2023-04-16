@@ -1,5 +1,11 @@
 # Calibre Web
 
+## What is it?
+[Calibre Web](https://github.com/janeczku/calibre-web) is web app for browsing, reading and downloading eBooks stored in a Calibre database
+
+![page](calibre_web-app.png)
+=======
+
 ![Alt text](cw.jpg)
 
 ![cweb](https://github.com/janeczku/calibre-web/wiki/images/main_screen.png)

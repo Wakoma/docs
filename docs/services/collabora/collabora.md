@@ -95,3 +95,7 @@ Available on Desktop and Mobile
 ## Additional Resources
 
 https://www.collaboraoffice.com/collabora-office/
+
+* [Github page](https://github.com/CollaboraOnline)
+* [Community page](https://collaboraonline.github.io)
+* [Collabora forum](https://forum.collaboraonline.com)

@@ -1,5 +1,3 @@
-* [Diagrams.net](https://www.diagrams.net/) - 
-
 
 # Diagrams.net
 
@@ -36,10 +34,6 @@ https://www.diagrams.net/features
 
 
 ## Additional Resources
-
-
-
-
 
 
 
