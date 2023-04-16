@@ -21,5 +21,4 @@ Because modern websites are complicated and often rely on dynamic content, Archi
 
 
 ## Additional Resources
-
-https://github.com/ArchiveBox/ArchiveBox/wiki
+* [GitHub page](https://github.com/ArchiveBox/ArchiveBox/wiki)

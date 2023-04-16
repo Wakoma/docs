@@ -38,6 +38,4 @@ For Server Administrators
 
 
 ## Additional Resources
-
-https://docs.azuracast.com/en/home
-
+* [Documetation](https://docs.azuracast.com/en/home)

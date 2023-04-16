@@ -2,9 +2,8 @@
 
 ![FreePBX logo](freepbx.png)
 
-https://www.freepbx.org/
-
-The “Free” in FreePBX stands for Freedom. That’s because FreePBX, the world’s most popular open source IP PBX, gives users the tools to build a phone system tailored to their needs.
+## What is it?
+The “Free” in [FreePBX](https://www.freepbx.org/) stands for Freedom. That’s because FreePBX, the world’s most popular open source IP PBX, gives users the tools to build a phone system tailored to their needs.
 
 ## Basic Info
 
@@ -26,5 +25,4 @@ For more guidance, check out the FreePBX wiki! Handy guides from the community l
 
 
 ## Additional Resources
-
-https://www.freepbx.org/community/
+* [Community page](https://www.freepbx.org/community/)

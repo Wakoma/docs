@@ -1,5 +1,10 @@
-* [IPFS](https://ipfs.io) is a network protocol that enables the exchange of data in a decentralized network.
+# IPFS
+![logo](ipfs.jpg)
 
+## What is it?
+[IPFS](https://ipfs.io) is a network protocol that enables the exchange of data in a decentralized network.
+
+## Integration with Lokal
 Lokal supports IPFS by including a node and a pinning service that can be used to access and store data on the IPFS network.
 
 To access the network, users will need a special web browser with support for IPFS. The browser used is called Agregore Mobile. You can get the latest version of Agregore Mobile [here](https://github.com/AgregoreWeb/agregore-mobile/releases). Download the APK and upload it to your main Lokal Wordpress instance.
@@ -57,3 +62,7 @@ To get started using IPFS, you will need to install a special browser called Agr
 ### Browse other IPFS site when you have an internet connection
 
 - Go to ipns://ipfs.io - this is the main IPFS website
+
+# Additional resources
+
+* [GitHub](https://github.com/ipfs)
