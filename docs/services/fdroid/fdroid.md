@@ -1,10 +1,18 @@
 # F-Droid
 
-![Service Logo](fdroid2.jpg)
+![Alt text](froid2.jpg)
+
+![fdroid](https://forum.f-droid.org/uploads/default/original/2X/5/5054ffd158f73099d6e59268694f85de93feef50.png)
+
 
 https://f-droid.org/en/
 
+## Summary
+
 An installable catalogue of FOSS (Free and Open Source Software) applications for the Android platform.
+
+## Why is this useful for offline or underserved communities?
+
 
 ## Basic Info
 
