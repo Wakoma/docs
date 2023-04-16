@@ -2,9 +2,17 @@
 
 ![Alt text](archivebox.png)
 
+
 https://archivebox.io/
 
+## Summary
+
 ArchiveBox is a powerful, self-hosted internet archiving solution to collect, save, and view sites you want to preserve offline.
+
+
+## Why is this useful for offline or underserved communities?
+
+Users can save content of their choice locally, which can still be accessed when the internet goes down.
 
 ## Basic Info
 
@@ -25,6 +33,3 @@ Because modern websites are complicated and often rely on dynamic content, Archi
 ## Additional Resources
 
 https://github.com/ArchiveBox/ArchiveBox/wiki
-
-
-
