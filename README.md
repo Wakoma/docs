@@ -7,7 +7,7 @@ We will be adding information about each of the services offered on [Lokal](http
 
 All services included in the platform operate offline-first.
 
-Want to test the services? Head over to [lokal.network/](lokal.network/)
+Want to test the services? Head on over [here](https://lokal.network/) for the demo site! 
 
 This is a work in progress! Contributions very welcome. 
 
