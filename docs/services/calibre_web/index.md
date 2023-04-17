@@ -6,7 +6,7 @@
 ![page](calibre_web-app.png)
 =======
 
-![Alt text](cw.jpg)
+![Alt text](cw.png)
 
 ![cweb](https://github.com/janeczku/calibre-web/wiki/images/main_screen.png)
 

@@ -1,6 +1,6 @@
 # Netbox
 
-![Service Logo](netbox.jpg)
+![Service Logo](netbox.png)
 
 https://github.com/netbox-community/netbox
 

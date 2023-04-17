@@ -176,8 +176,7 @@ Now you are ready to run `ansible-playbook -i hosts/<your-inventory-file> prepar
 First, create a new inventory file in `hosts/`. You can copy/modify the example `hosts/remote` file.
 I use server's nickname or domain for the filename.  This file will contain the IP, domain and other
 details about your server so Lokal can be setup  correctly. It needs to be in YAML format so you can
-specify services in this nice way. 
-The minimal example is bellow. For complete setup see [configuration section](configuration.md)
+specify services in this nice way. The minimal example is bellow. For more details refer to [getting started](gettingstarted.md).
 
 ```YAML
 all:
@@ -191,7 +190,7 @@ all:
 ```
 
 Other options, that can be overriden can be found in `roles/<service>/defaults/main.yml`.
-The most important variables are described in [configuration section](configuration.md)
+The most important variables are described in [getting started](gettingstarted.md)
 and can be found in `roles/lokal/defaults/main.yml`
 
 ## Services

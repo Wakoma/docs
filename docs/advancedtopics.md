@@ -5,7 +5,7 @@ simple such as certificates handling or operations in production.
 
 ## HTTPS Cert Resolvers
 
-Lokal provides a few ways of providing HTTPS. You need SSL certificates for your
+Lokal provides a few ways of allowing HTTPS. You need SSL certificates for your
 domain to be able to use HTTPS protocol. Lokal uses [traefik](https://traefik.io)
 for routing thus we are using its capabilities.
 
@@ -13,7 +13,7 @@ for routing thus we are using its capabilities.
 
 The simplest method for obtaining certificates from Let's Encrypt is using the 
 HTTP challenge. Before you use this, you need to prepare your DNS A entries to 
-point to your Lokal server. On Lokal side, use this as your [hosts vars](configuration.md).
+point to your Lokal server. In your hosts file, make sure to have those variables.
 
 ```yaml
 email_admin: your@email.com
