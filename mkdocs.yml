@@ -18,6 +18,7 @@ extra:
 nav:
   - Home: index.md
   - Getting Started: gettingstarted.md
+  - Getting Advanced: advancedtopics.md
   - Resources: resources.md
   - Services:
     - Current Services:

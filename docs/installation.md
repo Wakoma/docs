@@ -196,8 +196,8 @@ and can be found in `roles/lokal/defaults/main.yml`
 
 ## Services
 
-The services are hidden in `roles` folder (ansible required naming). You can find there the `base`
-service and `lokal` service used only as a source of configuration and optional services in other folders.
+The services are hidden in `roles` folder (ansible required naming). Exception is for `base` and `lokal`
+roles that are used only as a source of configuration and optional services for other folders.
 You define which services to install in your `hosts/` file (per-server). Add/remove any desired services
 in `vars:services` list. No need to specify either base or lokal. They are both installed automatically.
 
@@ -207,12 +207,12 @@ Once you have ansible setup on your local machine and remote server ready (prefe
 then you can start using the main `playbook.yml` that by default installs all services defined in
 `hosts` file in `services` variable.
 ```bash
-ansible-playbook -i hosts/<your-host-file> playbook.yml # remote installation
+ansible-playbook -i hosts/remote playbook.yml # remote installation
 ansible-playbook --ask-become-pass -i hosts/local playbook.yml # local installation
 ```
 or you can specify explicitly services that you want to install/update
 ```bash
-ansible-playbook -i hosts/<your-host-file> -e install=wordpress playbook.yml
+ansible-playbook -i hosts/remote -e install=wordpress playbook.yml
 ```
 
 You can run installation multiple times. It should only check that everything is

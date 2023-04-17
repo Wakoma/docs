@@ -93,11 +93,13 @@ When you are done, you should see successful install messages like this:
 ![Ansible Galaxy Requirements Install](/assets/getting-started/ansible-galaxy-screenshot.png)
 
 __4.2. Run the ansible playbook to prepare the server.__  
-From the root folder of the repo, run: `ansible-playbook --ask-become-pass -i hosts/machine prepare.yml`  
+From the root folder of the repo, run: `ansible-playbook -i hosts/machine prepare.yml`
 This step will set up the firewall, user accounts & keys and configure docker to prepare the server for Lokal installation.
 
 <iframe width="100%" height="350" src="https://www.youtube.com/embed/WilR6gogLpA" title="Docs - Prepare Playbook Run Through" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 __4.3. Run the ansible playbook to install services.__  
-From the root folder of the repo, run: `ansible-playbook --ask-become-pass -i hosts/machine playbook.yml`  
+From the root folder of the repo, run: `ansible-playbook -i hosts/machine playbook.yml`
 This step will deploy all the services that you have chosen in your hosts file from Step 2.
+
+If you are interesed in more details about installation process please refer to a separate [installation site](installation.md)

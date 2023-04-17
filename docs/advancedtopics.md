@@ -1,10 +1,15 @@
-# HTTPS Cert Resolvers
+# Advanced topics
+
+Here we list regular actions or configuration that might be needed and is not
+simple such as certificates handling or operations in production.
+
+## HTTPS Cert Resolvers
 
 Lokal provides a few ways of providing HTTPS. You need SSL certificates for your
 domain to be able to use HTTPS protocol. Lokal uses [traefik](https://traefik.io)
 for routing thus we are using its capabilities.
 
-## HTTP challenge
+### HTTP challenge
 
 The simplest method for obtaining certificates from Let's Encrypt is using the 
 HTTP challenge. Before you use this, you need to prepare your DNS A entries to 
@@ -22,7 +27,7 @@ on the usage of Let's Encrypt and cert_resolver to http is obvious in this case.
 Traefik will generate one certificate for each subdomain that any of your 
 application uses. It even handles automatic renewal before expiration.
 
-## DNS challenge
+### DNS challenge
 
 DNS challenge still uses Let's Encrypt but it doesn't require you to pre-set your
 DNS records. Since somebody has to do it, then your DNS provider must support API
