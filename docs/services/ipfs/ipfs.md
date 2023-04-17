@@ -1,4 +1,17 @@
-* [IPFS](https://ipfs.io) is a network protocol that enables the exchange of data in a decentralized network.
+
+# IPFS
+
+![Alt text](ipfs.jpg)
+
+
+https://ipfs.io
+
+## Summary
+
+IPFS is a network protocol that enables the exchange of data in a decentralized network.
+
+
+## Info
 
 Lokal supports IPFS by including a node and a pinning service that can be used to access and store data on the IPFS network.
 
@@ -57,3 +70,8 @@ To get started using IPFS, you will need to install a special browser called Agr
 ### Browse other IPFS site when you have an internet connection
 
 - Go to ipns://ipfs.io - this is the main IPFS website
+
+
+## Additional Resources
+
+https://en.wikipedia.org/wiki/InterPlanetary_File_System
