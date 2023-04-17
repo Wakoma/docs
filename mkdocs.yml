@@ -22,52 +22,52 @@ nav:
   - Resources: resources.md
   - Services:
     - Current Services:
-      - services/azuracast/azuracast.md
-      - services/calibre_web/calibre_web.md
-      - services/collabora/collabora.md
-      - services/element/element.md
-      - services/fdroid/fdroid.md
-      - services/grafana/grafana.md
-      - services/ipfs/ipfs.md
-      - services/jellyfin/jellyfin.md
-      - services/jitsi/jitsi.md
-      - services/kiwix/kiwix.md
-      - services/kolibri/kolibri.md
-      - services/matomo/matomo.md
-      - services/matrix/matrix.md
-      - services/moodle/moodle.md
-      - services/nextcloud/nextcloud.md
-      - services/openvpn/openvpn.md
-      - services/prometheus/prometheus.md
-      - services/resourcespace/resourcespace.md
-      - services/transmission/transmission.md
-      - services/uisp/uisp.md
-      - services/unifi_controller/unifi_controller.md
-      - services/unpoller/unpoller.md
-      - services/wireguard/wireguard.md
-      - services/wordpress/wordpress.md
+      - Azuracast: services/azuracast/index.md
+      - Calibre_web: services/calibre_web/index.md
+      - Collabora: services/collabora/index.md
+      - Element: services/element/index.md
+      - Fdroid: services/fdroid/index.md
+      - Grafana: services/grafana/index.md
+      - Ipfs: services/ipfs/index.md
+      - Jellyfin: services/jellyfin/index.md
+      - Jitsi: services/jitsi/index.md
+      - Kiwix: services/kiwix/index.md
+      - Kolibri: services/kolibri/index.md
+      - Matomo: services/matomo/index.md
+      - Matrix: services/matrix/index.md
+      - Moodle: services/moodle/index.md
+      - Nextcloud: services/nextcloud/index.md
+      - Openvpn: services/openvpn/index.md
+      - Prometheus: services/prometheus/index.md
+      - Resourcespace: services/resourcespace/index.md
+      - Transmission: services/transmission/index.md
+      - Uisp: services/uisp/index.md
+      - Unifi_controller: services/unifi_controller/index.md
+      - Unpoller: services/unpoller/index.md
+      - Wireguard: services/wireguard/index.md
+      - Wordpress: services/wordpress/index.md
     - Upcoming Services:
-      - services/archivebox/archivebox.md
-      - services/librenms/librenms.md
-      - services/mumble/mumble.md
-      - services/netbox/netbox.md
-      - services/openwisp/openwisp.md
-      - services/snipeit/snipeit.md
-      - services/zabbix/zabbix.md
-      - services/zeek/zeek.md
-      - services/bigbluebutton/bigbluebutton.md
-      - services/diagrams_net/diagrams_net.md
-      - services/discourse/discourse.md
-      - services/dokuwiki/dokuwiki.md
-      - services/etherpad/etherpad.md
-      - services/hedgedoc/hedgedoc.md
-      - services/homeassistant/homeassistant.md
-      - services/limesurvey/limesurvey.md
-      - services/lychee/lychee.md
-      - services/mediawiki/mediawiki.md
-      - services/minecraft/minecraft.md
-      - services/osticket/osticket.md
-      - services/piwigo/piwigo.md
-      - services/roundcube/roundcube.md
-      - services/syncthing/syncthing.md
-      - services/tinytinyrss/tinytinyrss.md
+      - Archivebox: services/archivebox/index.md
+      - Librenms: services/librenms/index.md
+      - Mumble: services/mumble/index.md
+      - Netbox: services/netbox/index.md
+      - Openwisp: services/openwisp/index.md
+      - Snipeit: services/snipeit/index.md
+      - Zabbix: services/zabbix/index.md
+      - Zeek: services/zeek/index.md
+      - Bigbluebutton: services/bigbluebutton/index.md
+      - Diagrams_net: services/diagrams_net/index.md
+      - Discourse: services/discourse/index.md
+      - Dokuwiki: services/dokuwiki/index.md
+      - Etherpad: services/etherpad/index.md
+      - Hedgedoc: services/hedgedoc/index.md
+      - Homeassistant: services/homeassistant/index.md
+      - Limesurvey: services/limesurvey/index.md
+      - Lychee: services/lychee/index.md
+      - Mediawiki: services/mediawiki/index.md
+      - Minecraft: services/minecraft/index.md
+      - Osticket: services/osticket/index.md
+      - Piwigo: services/piwigo/index.md
+      - Roundcube: services/roundcube/index.md
+      - Syncthing: services/syncthing/index.md
+      - Tinytinyrss: services/tinytinyrss/index.md
