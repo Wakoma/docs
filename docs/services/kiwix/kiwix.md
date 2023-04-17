@@ -1,7 +1,6 @@
 # Kiwix
 
-![Service Logo](azuracast.jpg)
-
+![Alt text](kiwixlogo.png)
 
 https://www.kiwix.org/en/
 
@@ -26,6 +25,3 @@ Kiwix is an offline reader for online content like Wikipedia, Project Gutenberg,
 
 ## Additional Resources
 
-Docs
-
-Vids
