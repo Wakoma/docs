@@ -24,8 +24,7 @@ Users can create network, wiring, and other diagrams and mindmaps, completely of
 
 ## Basic Info
 
-Full Features List:
-https://www.diagrams.net/features
+[Full Features List](https://www.diagrams.net/features)
 
 
 
