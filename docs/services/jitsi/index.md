@@ -1,7 +1,4 @@
-# Jitsi
-
-[<img src="jitsi.png" width="20%"/>](https://jitsi.org)
-
+# <img src="jitsi.png" width=50px style="vertical-align: middle;" alt="Logo"/> Jitsi
 
 More secure, more flexible, and completely free video conferencing.
 

@@ -1,6 +1,4 @@
-# Zeek
-
-![Service Logo](zeek.png)
+# <img src="zeek.png" width=50px style="vertical-align: middle;" alt="Logo"/> Zeek
 
 https://zeek.org/
 

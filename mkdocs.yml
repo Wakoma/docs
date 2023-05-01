@@ -2,6 +2,7 @@ site_name: Lokal Docs
 site_url: https://docs.lokal.network/
 repo_name: Wakoma/docs
 repo_url: https://github.com/Wakoma/docs
+# copyright: Text goes here
 theme:
   icon:
     repo: fontawesome/brands/github
@@ -11,10 +12,25 @@ theme:
   features:
     - navigation.instant
     - navigation.sections
+    - navitation.footer
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
 extra_css:
   - css/extra.css
 extra:
   homepage: https://wakoma.co/lokal/
+  generator: false
+  # social:
+  #   - icon: 
+  #     link: https://twitter.com/wakomainc
+  #   - icon: fontawesome/brands/linkedin
+  #     link: https://www.linkedin.com/company/18222794
+  #   - icon: fontawesome/brands/github
+  #     link: https://github.com/Wakoma
 nav:
   - Home: index.md
   - Getting Started: gettingstarted.md

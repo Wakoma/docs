@@ -1,6 +1,4 @@
-# FreePBX
-
-![FreePBX logo](freepbx.png)
+# <img src="freepbx.png" width=50px style="vertical-align: middle;" alt="Logo"/> FreePBX
 
 https://www.freepbx.org/
 

@@ -1,7 +1,5 @@
 
-# Diagrams.net
-
-![Alt text](diagrams.jpg)
+# <img src="diagrams.jpg" width=50px style="vertical-align: middle;" alt="Logo"/> Diagrams.net
 
 ![dnet](https://gdm-catalog-fmapi-prod.imgix.net/ProductScreenshot/a2b9e77a-b8c0-49f9-9a2d-936c59c7e194.png?ixlib=react-9.0.3&ch=Width%2CDPR&auto=format&w=2258)
 

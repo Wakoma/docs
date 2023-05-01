@@ -1,7 +1,5 @@
 
-# Collabora Office
-
-![Alt text](collabora.png)
+# <img src="collabora.png" width=50px style="vertical-align: middle;" alt="Logo"/> Collabora Office
 
 
 https://www.collaboraoffice.com/

@@ -1,6 +1,4 @@
-# Mumble
-
-![Service Logo](mumble.png)
+# <img src="mumble.png" width=50px style="vertical-align: middle;" alt="Logo"/> Mumble
 
 https://www.mumble.info/
 

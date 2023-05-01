@@ -1,6 +1,6 @@
-# Kiwix
+# <img src="kiwixlogo.png" width=50px style="vertical-align: middle;" alt="Logo"/> Kiwix
 
-![Alt text](kiwixlogo.png)
+[Try Kiwix Demo :material-arrow-right:](https://learn.lokal.network/){ .md-button }
 
 https://www.kiwix.org/en/
 

@@ -1,6 +1,4 @@
-# AzuraCast
-
-![Service Logo](azuracast.jpg)
+# <img src="azuracast.jpg" width=50px style="vertical-align: middle;" alt="Logo"/> AzuraCast
 
 
 ![Image](https://camo.githubusercontent.com/49c456da723fc31a79c2b9a22f7bb2c1844bd0f3d55e7793db5c95fdc60c873a/68747470733a2f2f7777772e617a757261636173742e636f6d2f696d672f53637265656e73686f74546f75722e676966)

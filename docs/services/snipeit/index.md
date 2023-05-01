@@ -1,6 +1,4 @@
-# Snipe-IT
-
-![Service Logo](snipeit.png)
+# <img src="snipeit.png" width=50px style="vertical-align: middle;" alt="Logo"/> Snipe-IT
 
 https://snipeitapp.com/
 

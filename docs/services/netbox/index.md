@@ -1,6 +1,4 @@
-# Netbox
-
-![Service Logo](netbox.png)
+# <img src="netbox.png" width=50px style="vertical-align: middle;" alt="Logo"/> Netbox
 
 https://github.com/netbox-community/netbox
 

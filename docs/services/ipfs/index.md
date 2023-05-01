@@ -1,8 +1,5 @@
 
-# IPFS
-
-![Alt text](ipfs.jpg)
-
+# <img src="ipfs.jpg" width=50px style="vertical-align: middle;" alt="Logo"/> IPFS
 
 https://ipfs.io
 

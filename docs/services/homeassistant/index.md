@@ -1,1 +1,3 @@
-* [Home Assistant (HASSIO)](https://www.home-assistant.io/) - Open source home automation that puts local control & privacy first. 
+# <img src="hassio.jpg" width=50px style="vertical-align: middle;" alt="Logo"/> Home Assistant (HASSIO)
+
+Open source home automation that puts local control & privacy first. 

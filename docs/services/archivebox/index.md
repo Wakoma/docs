@@ -1,7 +1,4 @@
-# ArchiveBox
-
-![Alt text](archivebox.png)
-
+# <img src="archivebox.png" width=50px style="vertical-align: middle;" alt="Logo"/> ArchiveBox
 
 https://archivebox.io/
 

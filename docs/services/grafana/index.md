@@ -1,14 +1,16 @@
-# Grafana
+# <img src="graf2.jpg" width=50px style="vertical-align: middle;" alt="Logo"/> Grafana 
 
+[Try Grafana Demo :material-arrow-right:](https://dash.lokal.network/){ .md-button }
 
-![Alt text](graf2.jpg)
-
-![unifi](https://grafana.com/api/dashboards/1486/images/7547/image)
+![Grafana](https://grafana.com/api/dashboards/1486/images/7547/image)
 
 
 https://grafana.com/
 
 ## Summary
+
+
+
 
 From dashboards to metrics, logs and traces. Choose what works best for you and your team.
 

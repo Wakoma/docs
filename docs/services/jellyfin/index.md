@@ -1,6 +1,6 @@
-# Jellyfin
+# <img src="jellyfin.png" width=50px style="vertical-align: middle;" alt="Logo"/> Jellyfin
 
-![Alt text](jellyfin.png)
+[Try Jellyfin Demo :material-arrow-right:](https://video.lokal.network/){ .md-button }
 
 https://jellyfin.org/
 

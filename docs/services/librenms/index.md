@@ -1,6 +1,4 @@
-# LibreNMS
-
-![Service Logo](librenems.jpg)
+# <img src="librenms.jpg" width=50px style="vertical-align: middle;" alt="Logo"/> LibreNMS
 
 https://www.librenms.org/
 

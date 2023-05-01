@@ -1,6 +1,4 @@
-# F-Droid
-
-![Alt text](froid2.jpg)
+# <img src="fdroid.png" width=50px style="vertical-align: middle;" alt="Logo"/> F-Droid
 
 ![fdroid](https://forum.f-droid.org/uploads/default/original/2X/5/5054ffd158f73099d6e59268694f85de93feef50.png)
 

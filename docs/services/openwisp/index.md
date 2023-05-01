@@ -1,6 +1,4 @@
-# OpenWISP
-
-![Service Logo](openwisp.jpg)
+# <img src="openwisp.jpg" width=50px style="vertical-align: middle;" alt="Logo"/> OpenWISP
 
 http://openwisp.org/
 

@@ -1,6 +1,4 @@
-# Element
-
-![Service Logo](element.png)
+# <img src="element.png" width=50px style="vertical-align: middle;" alt="Logo"/> Element
 
 
 ![element](https://placid.app/u/uzhd1?hl=Element&subline=Chat%20Client&img=%24PIC%24https:%2F%2Fmadewithnetworkfra.fra1.digitaloceanspaces.com%2Fspatie-space-production%2F28845%2Felement-web.jpg)

@@ -1,4 +1,4 @@
-# Calibre Web
+# <img src="calibre_web_logo.jpg" width=50px style="vertical-align: middle;" alt="Logo"/> Calibre Web
 
 ## What is it?
 [Calibre Web](https://github.com/janeczku/calibre-web) is web app for browsing, reading and downloading eBooks stored in a Calibre database

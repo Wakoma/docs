@@ -1,6 +1,4 @@
-# Zabbix
-
-![Service Logo](zabbixpng.png)
+# <img src="zabbixlogo.png" width=50px style="vertical-align: middle;" alt="Logo"/> Zabbix
 
 https://www.zabbix.com/
 
