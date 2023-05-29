@@ -12,10 +12,22 @@ Welcome to Lokal. This guide is a quick getting started guide and will help you 
 
 ## Installation
 
-### 1. Clone the repo
+### 1. Preparing the client
 
-Clone the repository to your local machine:
-`git clone https://github.com/Wakoma/Lokal.git`
+Client is the computer that has Ansible installed and contains SSH keys for accessing the server.
+Nothing apart ansible and its modules will get installed here.
+
+First, clone the repository to your local machine: `git clone https://github.com/Wakoma/Lokal.git`
+
+Second, install ansible and its requirements. Ansible is a python library for remote server configuration.
+We use it to prepare your server (optional) and to install Lokal. You can install Ansible either via your
+package manager or pip (preferably into a virtual environment). Ansible is not available on Windows otherwise
+than through WSL.
+
+```bash
+# after installing ansible, run following to install Lokal's ansible dependencies
+ansible-galaxy install -r requirements.yml
+```
 
 ### 2. OPTIONAL: Preparing the server using Ansible
 
@@ -36,8 +48,8 @@ all:
 You can change the hosts file to suit your needs. Let's go through the options:
 
 - `hosts`: Specify the IP address of your target machine here.
-- `ssh_key`: Specify your SSH public key here (content, not path).
-- Make sure that you use your `"<non-root-user>"` as the `ansible_user` in the next step.
+- `ssh_key`: Specify your SSH public key here (content, not path). It will be inserted into non-root-user's `~/.ssh/authorized_keys`
+- Make sure that you use your `"<non-root-user>"` is the `ansible_user` in the next step.
 
 Now you are ready to run
 ```bash
@@ -56,8 +68,8 @@ all:
     ssl_use_acme: true
     domain: <your-domain>  # e.g. lokal.network
     email_admin: admin@<your-domain>
-    password_admin: a-strong-password
-    lokal_secret: someRandomCharactersAndNumbers123
+    password_admin: "a-strong-password"
+    lokal_secret: "someRandomCharactersAndNumbers123"
     ansible_user: <non-root-user> # e.g. "lokal" (app_user from previous step)
     services:
         - azuracast
@@ -78,9 +90,9 @@ all:
 ```
 Now you are ready to start the installation with command
 ```bash
-ansible-playbook -i hosts/<your-new-hosts-file>.yml playbook.yml
+ansible-playbook -i hosts/<your-domain>.yml playbook.yml
 ```
-We strongly advise to reboot the server after initial installation or if the initial installation fails.
+We strongly advise to reboot the server after the initial installation or if the initial installation fails.
 
 #### Detailed configuration
 
@@ -98,26 +110,8 @@ We need to change the hosts file to suit your needs. Let's go through the option
 (optional settings)
 - `project_root`: Absolute path (optionally using envvars such as `$HOME`) to where Lokal will be installed (default: /opt/lokal/).
 
-When you're all done and ready, please save the file with a name of your choice in the hosts folder. In this guide, we will assume the name of this file to be `machine`
+If you are interesed in more details about installation process please refer to a separate [installation site](installation.md)
 
-
-### 4. Run the playbooks
-
-You are now ready to run the playbook which will automatically set up and configure the specified services for first-use.
-
-__4.1. Install all necessary ansible roles.__  
-From the root folder of the repo, run: `ansible-galaxy install -r requirements.yml`  
-When you are done, you should see successful install messages like this:
-![Ansible Galaxy Requirements Install](/assets/getting-started/ansible-galaxy-screenshot.png)
-
-__4.2. Run the ansible playbook to prepare the server.__  
-From the root folder of the repo, run: `ansible-playbook -i hosts/machine prepare.yml`
-This step will set up the firewall, user accounts & keys and configure docker to prepare the server for Lokal installation.
+#### Video of successful preparation
 
 <iframe width="100%" height="350" src="https://www.youtube.com/embed/WilR6gogLpA" title="Docs - Prepare Playbook Run Through" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-__4.3. Run the ansible playbook to install services.__  
-From the root folder of the repo, run: `ansible-playbook -i hosts/machine playbook.yml`
-This step will deploy all the services that you have chosen in your hosts file from Step 2.
-
-If you are interesed in more details about installation process please refer to a separate [installation site](installation.md)
