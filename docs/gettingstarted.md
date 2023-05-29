@@ -17,20 +17,48 @@ Welcome to Lokal. This guide is a quick getting started guide and will help you 
 Clone the repository to your local machine:
 `git clone https://github.com/Wakoma/Lokal.git`
 
-### 2. Set up a hosts file for the services
+### 2. OPTIONAL: Preparing the server using Ansible
 
-Determine which services you want installed. Once you are ready, create a new file in the `hosts` folder with the following content. This file contains all variables required to get up and running with all currently supported services:
+Your server needs to have `docker` and `docker compose` available for a non-root user of your choice. Additionally, no
+firewall apart pure `iptables` must be present. If you'd prefer Ansible do all those steps for you then create a one-off
+hosts file and use it together with `prepare.yml` playbook. I usually name the hosts file `root@<your-domain>.yml` and
+place in in the `hosts` folder with the following content:
 
 ```yaml
 all:
-  hosts: "1.2.3.4"
+  hosts: "<server-IP-address>" # e.g. "1.2.3.4"
   vars:
-    ssl_use_acme: false
-    domain: lokal.network
-    email_admin: admin@example.com
-    password_admin: strong-password
-    lokal_secret: nui3fhAoiSDUndakd12
-    ansible_user: lokal
+    ansible_user: root
+    app_user: <non-root-user> # e.g. "lokal"
+    setup_ssh: true # only if the non-root user does not yet exist
+    ssh_key: <pub_key> # e.g. ssh-rsa AAAAB3Nza....
+```
+You can change the hosts file to suit your needs. Let's go through the options:
+
+- `hosts`: Specify the IP address of your target machine here.
+- `ssh_key`: Specify your SSH public key here (content, not path).
+- Make sure that you use your `"<non-root-user>"` as the `ansible_user` in the next step.
+
+Now you are ready to run
+```bash
+ansible-playbook -i hosts/root@<your-domain>.yml prepare.yml
+```
+
+### 3. Set up a hosts file for the services
+
+Now we are going to create a hosts file for Lokal installation. Firstly, determine which services you want installed.
+Once you are ready, create a new file in the `hosts` folder (I name it `<your-domain>.yml`) with the following content.
+
+```yaml
+all:
+  hosts: "<server-IP-address>" # e.g. "1.2.3.4"
+  vars:
+    ssl_use_acme: true
+    domain: <your-domain>  # e.g. lokal.network
+    email_admin: admin@<your-domain>
+    password_admin: a-strong-password
+    lokal_secret: someRandomCharactersAndNumbers123
+    ansible_user: <non-root-user> # e.g. "lokal" (app_user from previous step)
     services:
         - azuracast
         - calibre
@@ -48,7 +76,15 @@ all:
         - unifi
         - wordpress
 ```
-Now we need to change the hosts file to suit your needs. Let's go through the options:
+Now you are ready to start the installation with command
+```bash
+ansible-playbook -i hosts/<your-new-hosts-file>.yml playbook.yml
+```
+We strongly advise to reboot the server after initial installation or if the initial installation fails.
+
+#### Detailed configuration
+
+We need to change the hosts file to suit your needs. Let's go through the options:
 
 - `hosts`: Specify the IP address of your target machine here.
 - `domain`: The domain that you will use, such as `lokal.network`. All services will be provisioned on a subdomain of the specified domain. Eg: `calibre.lokal.network`
@@ -64,24 +100,6 @@ Now we need to change the hosts file to suit your needs. Let's go through the op
 
 When you're all done and ready, please save the file with a name of your choice in the hosts folder. In this guide, we will assume the name of this file to be `machine`
 
-### 3. Set up a hosts file for preparing the server
-
-Create a new file in the `hosts` folder with the following content:
-
-```yaml
-all:
-  hosts: "1.2.3.4"
-  vars:
-    app_user: lokal
-    ansible_user: root
-    setup_ssh: true
-    ssh_key: pub_key
-```
-Now we need to change the hosts file to suit your needs. Let's go through the options:
-
-- `hosts`: Specify the IP address of your target machine here.
-- `ssh_key`: Specify your SSH public key here (content, not path).
-- Ensure that the `ansible_user` from Step 2 is the same as `app_user` here.
 
 ### 4. Run the playbooks
 

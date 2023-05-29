@@ -15,6 +15,7 @@ Rufus is the software we'll use to create Bootable Media (the USB stick with Ubu
 ## Install Ubuntu Server on NUC
 
 ### 1. Download Ubuntu Server
+
 * Download the latest ISO image Ubuntu LTS Server from [official ubuntu site](https://ubuntu.com/download/server).
 * Click Option 2 - Manual server installation.
 ![](https://i.imgur.com/KVn3rV1.png)
@@ -25,7 +26,6 @@ Rufus is the software we'll use to create Bootable Media (the USB stick with Ubu
 
 
 ### 2. Create Bootable USB Drive
-
 
 * Download Rufus to create a bootable USB drive. Click [here](http://rufus.ie/en/), then download the exe file:
 
