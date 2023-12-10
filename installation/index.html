@@ -1,0 +1,1861 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.lokal.network/installation/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/wakomalogo.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.1">
+    
+    
+      
+        <title>Installation - Lokal Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.45e1311d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#installation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://wakoma.co/lokal/" title="Lokal Docs" class="md-header__button md-logo" aria-label="Lokal Docs" data-md-component="logo">
+      
+  <img src="../assets/wakomalogowhite.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lokal Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Installation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Wakoma/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Wakoma/docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://wakoma.co/lokal/" title="Lokal Docs" class="md-nav__button md-logo" aria-label="Lokal Docs" data-md-component="logo">
+      
+  <img src="../assets/wakomalogowhite.png" alt="logo">
+
+    </a>
+    Lokal Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Wakoma/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Wakoma/docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gettingstarted/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advancedtopics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Advanced
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Services
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Services
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Current Services
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Current Services
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/azuracast/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Azuracast
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/calibre_web/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Calibre_web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/collabora/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Collabora
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/element/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Element
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/fdroid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fdroid
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/grafana/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grafana
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/ipfs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ipfs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/jellyfin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jellyfin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/jitsi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jitsi
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/kiwix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kiwix
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/kolibri/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kolibri
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/matomo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Matomo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/matrix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Matrix
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/moodle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Moodle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/nextcloud/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nextcloud
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/openvpn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Openvpn
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/prometheus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prometheus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/resourcespace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resourcespace
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/transmission/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transmission
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/uisp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Uisp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/unifi_controller/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unifi_controller
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/unpoller/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unpoller
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/wireguard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wireguard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/wordpress/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wordpress
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Upcoming Services
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Upcoming Services
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/archivebox/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Archivebox
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/librenms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Librenms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/mumble/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mumble
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/netbox/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Netbox
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/openwisp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Openwisp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/snipeit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Snipeit
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/zabbix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zabbix
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/zeek/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zeek
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/bigbluebutton/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bigbluebutton
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/diagrams_net/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diagrams_net
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/discourse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Discourse
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/dokuwiki/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dokuwiki
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/etherpad/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Etherpad
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/hedgedoc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hedgedoc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/homeassistant/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Homeassistant
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/limesurvey/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Limesurvey
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/lychee/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lychee
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/mediawiki/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mediawiki
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/minecraft/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Minecraft
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/osticket/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Osticket
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/piwigo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Piwigo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/roundcube/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roundcube
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/syncthing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Syncthing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/tinytinyrss/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tinytinyrss
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contribute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Add New Service
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-ubuntu-server-on-nuc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Ubuntu Server on NUC
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Install Ubuntu Server on NUC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-download-ubuntu-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Download Ubuntu Server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-create-bootable-usb-drive" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Create Bootable USB Drive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-alternative-for-maclinux" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 (Alternative for Mac/Linux)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-install-ubuntu-server-on-the-nuc" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Install Ubuntu Server on the NUC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-installation-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Installation Resources
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-lokal-platform-on-the-nuc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Lokal platform on the NUC
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Install Lokal platform on the NUC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prepare-your-server-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prepare your server (optional)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-lokal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Lokal
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Services
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Installation</h1>
+
+<h2 id="installation">Installation</h2>
+<p><strong>Prerequisites</strong></p>
+<p>Minimum requirements to start the process are as follows: Intel NUC, Bootable USB Stick, USB Keyboard and Mouse, Monitor, HDMI Cable  and Internet Network Connection.</p>
+<p>What we're about to do is, download the Ubuntu operating system 'image', put it on a USB stick, then put the stick into the server (NUC) to install the operating system.</p>
+<p>Rufus is the software we'll use to create Bootable Media (the USB stick with Ubuntu). </p>
+<h2 id="install-ubuntu-server-on-nuc">Install Ubuntu Server on NUC</h2>
+<h3 id="1-download-ubuntu-server">1. Download Ubuntu Server</h3>
+<ul>
+<li>Download the latest ISO image Ubuntu LTS Server from <a href="https://ubuntu.com/download/server">official ubuntu site</a>.</li>
+<li>
+<p>Click Option 2 - Manual server installation.
+<img alt="" src="https://i.imgur.com/KVn3rV1.png" /></p>
+</li>
+<li>
+<p>Click "Download Ubuntu Server 20.04.2 LTS"
+<img alt="" src="https://i.imgur.com/Kv0stXZ.png" /></p>
+</li>
+</ul>
+<h3 id="2-create-bootable-usb-drive">2. Create Bootable USB Drive</h3>
+<ul>
+<li>Download Rufus to create a bootable USB drive. Click <a href="http://rufus.ie/en/">here</a>, then download the exe file:</li>
+</ul>
+<p><img alt="" src="https://i.imgur.com/BK7acFt.png" /></p>
+<ul>
+<li>
+<p>Run the rufux.exe file. Select the device (injected USB) and click on ‘select’ to select your downloaded ubuntu iso file.</p>
+</li>
+<li>
+<p>Leave the rest of the options to default settings.
+**  Partition Scheme: MBR
+** Target System: NIOS or UEFI</p>
+</li>
+<li>
+<p>Click Start and press OK for further instructions.</p>
+</li>
+<li>
+<p>If you get stuck, you can follow <a href="https://ubuntu.com/tutorials/create-a-usb-stick-on-windows#1-overview">these</a> instructions.</p>
+</li>
+<li>Note: There are other options/ways as well to create a bootable USB drive</li>
+</ul>
+<h3 id="25-alternative-for-maclinux">2.5 (Alternative for Mac/Linux)</h3>
+<ul>
+<li>Install https://www.balena.io/etcher/</li>
+<li>Tips: https://www.youtube.com/watch?v=f78AwZk3IXs
+<img alt="image" src="https://user-images.githubusercontent.com/36915805/129319222-685581ea-9a27-4ee2-acb4-7d24076499d3.png" /></li>
+</ul>
+<h3 id="3-install-ubuntu-server-on-the-nuc">3. Install Ubuntu Server on the NUC</h3>
+<ul>
+<li>Insert the network cable from internet into the NUC.</li>
+<li>Insert the bootable USB stick you just made.</li>
+<li>Turn on the NUC (square button in front). The light should turn blue.</li>
+<li><strong>Optional:</strong> This step may not be required for a few systems (Asus systems may require adjustments). Press F2 to enter into the UEFI BIOS set-up menu and check settings. Press F10 to save changed settings. NUC will restart on its own.</li>
+</ul>
+<p><strong>Note:</strong> F2 &gt; Boot-Order (UEFI) &gt; Advanced &gt; Boot-Configuration &gt; OS=Linux and Boot Device=USB and Secure Boot should be enabled.</p>
+<p><strong>To enter boot menu:</strong></p>
+<p><img alt="" src="https://i.imgur.com/FgdVCKs.png" /></p>
+<ul>
+<li>Press F10 to enter into the boot menu</li>
+<li>Select the USB memory stick (UEFI)</li>
+<li>
+<p>Select ‘Install Ubuntu Server’. You can navigate through the options with the arrow keys. Press Enter to select the desired option. 
+<img alt="" src="https://i.imgur.com/kOa4AwA.png" /></p>
+</li>
+<li>
+<p>Select Language</p>
+</li>
+</ul>
+<p><img alt="" src="https://i.imgur.com/gB2BIAL.png" /></p>
+<ul>
+<li>Select Keyboard Layout</li>
+</ul>
+<p><img alt="" src="https://i.imgur.com/zPvstcc.png" /></p>
+<ul>
+<li>
+<p>Select the network cable (eth0/ens/enp)</p>
+</li>
+<li>
+<p>Click Done and continue for further instructions</p>
+</li>
+<li>
+<p>Select the right disk (should be LITEON with more space)</p>
+</li>
+</ul>
+<blockquote>
+<p>Use an entire disk: Selecting this option will erase the entire hard disk and automatically partition the drive for you.</p>
+</blockquote>
+<ul>
+<li>
+<p>Click Done and continue for further instructions</p>
+</li>
+<li>
+<p>Select server name, username and password.  This can be whatever you want, but make sure to write it down.</p>
+</li>
+</ul>
+<p><img alt="" src="https://i.imgur.com/Cme8vsL.png" /></p>
+<ul>
+<li>
+<p>Install openSSH server and press spacebar to select </p>
+</li>
+<li>
+<p>Nothing else needs to be installed, click on done</p>
+</li>
+<li>
+<p>It will take another 3 minutes or less for the installation</p>
+</li>
+<li>
+<p>Select reboot and hit enter. Remove the USB stick. </p>
+</li>
+<li>
+<p>Use the username and password to login to the NUC server.</p>
+</li>
+<li>
+<p>Try to ping an internal machine participating in LAN</p>
+</li>
+</ul>
+<h3 id="additional-installation-resources">Additional Installation Resources</h3>
+<p>https://www.makeuseof.com/ubuntu-server-guide/</p>
+<p>https://www.itsupportwale.com/blog/install-ubuntu-20-04-lts-server/</p>
+<h2 id="install-lokal-platform-on-the-nuc">Install Lokal platform on the NUC</h2>
+<p>Lokal is installed using <code>ansible</code> that allows you to manage your (ubuntu) server remotely. Firstly, you
+need to install ansible and clone the Lokal repo on your client (can be your server - you'll perform
+local installation in this case).</p>
+<pre><code class="language-bash">git checkout https://github.com/Wakoma/Lokal.git Lokal
+cd Lokal
+</code></pre>
+<p>We require ansible version <code>&gt;=2.11</code>. Ansible is a python package so alternatively, you can use <code>pip</code> to
+install it.</p>
+<pre><code class="language-bash">pip install ansible  # or apt install ansible
+ansible-galaxy install -r requirements.yml
+</code></pre>
+<p>In case your client is Windows or just don't want to install ansible and python on your computer,
+feel free to use our docker container, that contains all necessary software for the client.</p>
+<pre><code class="language-bash">docker build -t lokal:latest .
+docker run --rm -itv ${PWD}:/lokal lokal:latest
+</code></pre>
+<p>This will give you a bash terminal where you can access lokal files and run all commands described below.</p>
+<p><em>This is just a "client" that you use to actually install Lokal on your server. It is not Lokal installation.</em></p>
+<h3 id="prepare-your-server-optional">Prepare your server (optional)</h3>
+<p>This is an optional step that helps you prepare a fresh machine with only root user on it.
+The play <code>prepare.yml</code> creates an application user and adds your SSH key in <code>authorized_keys</code>
+if you define <code>setup_ssh:true</code> in your hosts vars. It also installs latest docker and other
+necessary software. You need to create a separate inventory file because this play connects
+as <code>root</code>. The content of the file is following</p>
+<pre><code class="language-YAML">all:
+  hosts: &quot;1.2.3.4&quot;
+  vars:
+    app_user: ubuntu # the application user under which lokal will run
+    ansible_user: root # mandatory to connect as root user
+    setup_ssh: true # set to true only if app_user does not have SSH setup yet (and fill `ssh_key`)
+    ssh_key: &lt;content of your .ssh/id_rsa.pub or wherever you have your public key&gt;
+</code></pre>
+<p>Now you are ready to run <code>ansible-playbook -i hosts/&lt;your-inventory-file&gt; prepare.yml</code></p>
+<h3 id="install-lokal">Install Lokal</h3>
+<p>First, create a new inventory file in <code>hosts/</code>. You can copy/modify the example <code>hosts/remote</code> file.
+I use server's nickname or domain for the filename.  This file will contain the IP, domain and other
+details about your server so Lokal can be setup  correctly. It needs to be in YAML format so you can
+specify services in this nice way. The minimal example is bellow. For more details refer to <a href="../gettingstarted/">getting started</a>.</p>
+<pre><code class="language-YAML">all:
+  hosts: &quot;1.2.3.4&quot; # your server's IP (can be a hostname too)
+  vars:
+    ssl_use_acme: true # or false if it is just testing machine not visible from the internet
+    domain: server.example.com # domain visible from the outside internet (used only when ssl_use_acme=true)
+    ansible_user: ubuntu # the application user under which Lokal will run
+    services: # define wanted services - list of available services is in roles/ folder
+    - wordpress
+</code></pre>
+<p>Other options, that can be overriden can be found in <code>roles/&lt;service&gt;/defaults/main.yml</code>.
+The most important variables are described in <a href="../gettingstarted/">getting started</a>
+and can be found in <code>roles/lokal/defaults/main.yml</code></p>
+<h2 id="services">Services</h2>
+<p>The services are hidden in <code>roles</code> folder (ansible required naming). Exception is for <code>base</code> and <code>lokal</code>
+roles that are used only as a source of configuration and optional services for other folders.
+You define which services to install in your <code>hosts/</code> file (per-server). Add/remove any desired services
+in <code>vars:services</code> list. No need to specify either base or lokal. They are both installed automatically.</p>
+<h3 id="installation_1">Installation</h3>
+<p>Once you have ansible setup on your local machine and remote server ready (preferably using <code>prepare.yml</code>)
+then you can start using the main <code>playbook.yml</code> that by default installs all services defined in
+<code>hosts</code> file in <code>services</code> variable.</p>
+<pre><code class="language-bash">ansible-playbook -i hosts/remote playbook.yml # remote installation
+ansible-playbook --ask-become-pass -i hosts/local playbook.yml # local installation
+</code></pre>
+<p>or you can specify explicitly services that you want to install/update</p>
+<pre><code class="language-bash">ansible-playbook -i hosts/remote -e install=wordpress playbook.yml
+</code></pre>
+<p>You can run installation multiple times. It should only check that everything is
+setup correctly. If you'd increase version in software in your hosts file or we
+would increase the version in the underlying roles than running the installation
+again would update the application.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "navitation.footer"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>
