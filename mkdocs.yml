@@ -87,3 +87,4 @@ nav:
       - Roundcube: services/roundcube/index.md
       - Syncthing: services/syncthing/index.md
       - Tinytinyrss: services/tinytinyrss/index.md
+    - Add New Service: contribute.md
